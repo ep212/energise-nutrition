@@ -9,34 +9,62 @@
     .flex-container {
       display: flex;
       flex-direction: column;
+      height: 200vh;
+    }
+    .page-title {
+      display: flex;
+      color: white;
+      justify-content: flex-start;
+      font-family: Arial;
+    }
+    .food-to-energy-top {
+      display: flex;
+      flex-direction: column;
+      background-color: #282B4D;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-    }
-    .card-img-top {
-      background-color: #282B4D;
-    }
-    .card-body {
-      color: white;
-      
+      max-height: 80vh;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto;
     }
     .buttons {
-      margin-top: 20px;
       display: flex;
-      gap: 10px;
+      height: 40vh;
+      justify-content: center;
+      align-items: center;
+      gap: 10vh;
+    }
+    .page-body {
+      color: white;
     }
   </style>
 </head>
 
 <body style="background-color: #282B4D;">
   <div class="flex-container">
-    <img src="img/energy-transparent-back.png" class="card-img-top" alt="..." style="max-height: 80vh; max-width: 100%; height: auto;">
+    <h1 class="page-title">Energise Nutrition</h1>
+    <img src="img/energy-transparent-back.png" class="food-to-energy-top" alt="...">
     <div class="buttons">
-      <button class="carbohydrates-button" type="button" style="border-radius: 8px; background-color: #F7BA20;">Carbohydrates</button>
+      <a href="carbohydrates.html"><button class="carbohydrates-button" type="button" style="border-radius: 8px; background-color: #F7BA20; height: 15vh; width: auto;">Carbohydrates</button></a>
+      <!-- <script>
+        function openParagraph() {
+          const newWindow = window.open("", "_blank"); // opens a new tab/window
+          newWindow.document.write(`
+            <!DOCTYPE html>
+            <html>
+            <head><title>Carbohydrates</title></head>
+            <body>
+              <p id="myParagraph">This is the paragraph that opens on a new page.</p>
+            </body>
+            </html>
+          `);
+        }
+      </script> -->
       <button class="fats-button" type="button" style="border-radius: 8px; background-color: #F7BA20;">Fats</button>
       <button class="proteins-button" type="button" style="border-radius: 8px; background-color: #F7BA20;">Proteins</button>
     </div>
-    <div class="card-body">
+    <div class="page-body">
         <p style="font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;">Above is Food to Energy</p>
     </div>
   </div>
