@@ -2,16 +2,66 @@
 <html>
 <head>
   <title>Carbohydrates</title>
+  <style>
+    /* Styles for carbohydrates.html, colour pallette: https://colorhunt.co/palette/d7c097e7deaf73af6f007e6e */
+    .carbs-container {
+      display: flex;
+      background-color: #007E6E;
+      flex-direction: column;
+      height: 200vh;
+    }
+    .header {
+      display: flex;
+      text-align: center;
+      margin-bottom: 20px;
+      font-family: Arial, sans-serif;
+      color: #E7DEAF;
+      padding: 0 0 0 10px;
+    }
+    .introductory-content {
+      display: flex;
+      margin: 20px;
+      flex-direction: row;
+    }
+    .introduction {
+      flex: 1;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    .test-image {
+      max-width: 60%;
+      height: auto;
+      margin-left: 20px;
+    }
+  </style>
 </head>
 <body>
-  <p id="myParagraph"></p>
-  <script>
-    fetch("what_are_carbohydrates.txt")
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById("myParagraph").textContent = data;
-      })
-      .catch(error => console.error("Error loading text file:", error));
-  </script>
+  <div class="carbs-container">
+    <div class="header">
+      <h1>Carbohydrates</h1>
+    </div>
+    <div class="introductory-content">
+      <p style="font-family: 'Gill Sans', 'Gill Sans MT', sans-serif; color: white;" class="introduction">
+        Carbohydrates are our bodies primary source of energy. According to UK government guidelines, 50-55% of the energy
+        we consume should come from carbohydrates. This means that 50-55% of our calorie intake should be from carbohydrates.
+        Of this, only 5% should come from added sugars. Seen as such a large bulk of our diet should consist of carbohydrates,
+        it's important to understand what they do, the differences between different sources, and how to make them work for you
+        and fit your goals. Please be aware that the percentages mentioned are 'guidelines', everybody is different and people
+        have different needs, they're not a one size fits all figure.
+      </p>
+      <img src="img/carbohydrates/energy-transparent-back.png" class="test-image" alt="...">
+    </div>
+    <div class="types-of-carbohydrates">
+      <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', sans-serif; color: white;">Types of Carbohydrates</h2>
+      <p style="font-family: 'Gill Sans', 'Gill Sans MT', sans-serif; color: white;">
+        There are two main types of carbohydrates, simple and complex. To understand the differences we first need to know that
+        carbohydrates are made up of sugar units. Simple, or sugary, carbohydrates are made up of between 1 and 10 sugar units, where
+        as complex, or starchy, carbohydrates can be made up of many hindreds of sugar units joined together. Monosacharrides and 
+        disaccharides are made up of one and two sugar units respectively, so they're your sugary carbohydrates. Polysaccharides are made 
+        up of many hundreds of sugar units and can be subdivided into starch and non-starch (fibre). Most of the carbohydrates we
+        consume will be broken down into glucose during digestion, glucose is an example of a monosaccharide.
+      </p>
+    </div>
+  </div>
 </body>
 </html>
