@@ -1,0 +1,88 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles for carbohydrates.html, colour pallette: https://colorhunt.co/palette/d7c097e7deaf73af6f007e6e */
+.carbs-container {
+    display: flex;
+    background-color: #007E6E;
+    flex-direction: column;
+    height: 300vh;
+}
+.header {
+    display: flex;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+    color: #E7DEAF;
+    padding: 0 0 0 10px;
+}
+.introductory-content {
+    display: flex;
+    margin: 20px;
+    flex-direction: row;
+}
+.introduction {
+    flex: 1;
+    margin: auto;
+    font-size: 20px;
+    line-height: 1.6;
+}
+.test-image {
+    max-width: 60%;
+    height: auto;
+    margin-left: 20px;
+}
+
+.what-carbs-do-flipcard {
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+    margin: 10px 25px 25px 25px;
+}
+
+.what-inner-flipcard {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.what-carbs-do-flipcard:hover .what-inner-flipcard {
+    transform: rotateY(180deg);
+}
+
+.what-carbs-do-front,
+.what-carbs-do-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* .flip-card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+.what-carbs-do-front {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.what-carbs-do-back {
+    background: #D7C097;
+    color: #73AF6F;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
