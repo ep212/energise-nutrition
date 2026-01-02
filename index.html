@@ -2,85 +2,70 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Energise Nutrition</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    /* color pallette: https://colorhunt.co/palette/061e291d546d5f9598f3f4f4 */
-    .flex-container {
-      display: flex;
-      flex-direction: column;
-      height: 200vh;
-    }
-    .header {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      padding: 10px 20px;
-      background-color: #061E29;
-    }
-    .header ul {
-      list-style-type: none;
-    }
-    .header a {
-      text-decoration: none;
-      padding: 15px;
-    }
-    .header li {
-      float: left;
-    }
-    .page-title {
-      display: flex;
-      color: #F3F4F4;
-      justify-content: flex-start;
-      background-color: #061E29;
-      font-family: Arial;
-    }
-    .food-to-energy-top {
-      display: flex;
-      flex-direction: column;
-      background-color: #061E29;
-      justify-content: center;
-      align-items: center;
-      max-height: 80vh;
-      max-width: 100%;
-      height: auto;
-      margin: 0 auto;
-    }
-    .page-body {
-      color: #F3F4F4;
-    }
-  </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Energise Nutrition</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <style>
+        /* color pallette: https://colorhunt.co/palette/061e291d546d5f9598f3f4f4 */
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            height: 200vh;
+        }
+
+        .page-title {
+            display: flex;
+            color: #F3F4F4;
+            justify-content: flex-start;
+            background-color: #061E29;
+            font-family: Arial;
+        }
+
+        .food-to-energy-top {
+            display: flex;
+            flex-direction: column;
+            background-color: #061E29;
+            justify-content: center;
+            align-items: center;
+            max-height: 80vh;
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        .page-body {
+            color: #F3F4F4;
+        }
+    </style>
 </head>
 
 <body style="background-color: #061E29;">
-  <div class="flex-container">
-    <header class="header">
-      <h1 class="page-title">Energise Nutrition</h1>
-      <nav class="navbar">
-        <ul>
-          <li><a href="index.html" style="color: #F3F4F4; font-family: Arial, sans-serif;">Home</a></li>
-          <li><a href="blogs.html" style="color: #F3F4F4; font-family: Arial, sans-serif;">Blogs</a></li>
-        </ul>
-      </nav>
-    </header>
-    <img src="img/energy-transparent-back.png" class="food-to-energy-top" alt="...">
-    <div class="page-body">
-      <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;">Welcome to Energise Nutrition</h2>
-        <p style="font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;">
-          Here at Energise Nutrition our aim is to offer nutritional advice that will help you on your way
-          to getting the most out of your diet. Nutrition affects all aspects of our lives, from how we look and 
-          feel to how we perform physically and mentally. The internet and social media are saturated with nutritional 
-          advice, so much so it can be overwhelming and difficult to tell fact from fiction. At Energise Nutrition 
-          we want to offer clear nutritional guidance based on scientific research, not based on what is in vogue at 
-          any particular time. On this website you can find various informative pages which aim to provide you with 
-          some of the knowledge we have, you can also reach out to us and we can set up a 1-2-1 consultation for further 
-          guidance and personalised support. We want to make healthy eating simple and attainable for everyone, this is our 
-          fundamental aim, and we believe this can lead to a healthier society.
-        </p>
+    <div class="flex-container">
+        <div id="header"></div>
+        <img src="img/energy-transparent-back.png" class="food-to-energy-top" alt="...">
+        <div class="page-body">
+            <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;">Welcome to Energise Nutrition</h2>
+            <p style="font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;">
+                Here at Energise Nutrition our aim is to offer nutritional advice that will help you on your way
+                to getting the most out of your diet. Nutrition affects all aspects of our lives, from how we look and
+                feel to how we perform physically and mentally. The internet and social media are saturated with
+                nutritional
+                advice, so much so it can be overwhelming and difficult to tell fact from fiction. At Energise Nutrition
+                we want to offer clear nutritional guidance based on scientific research, not based on what is in vogue
+                at
+                any particular time. On this website you can find various informative pages which aim to provide you
+                with
+                some of the knowledge we have, you can also reach out to us and we can set up a 1-2-1 consultation for
+                further
+                guidance and personalised support. We want to make healthy eating simple and attainable for everyone,
+                this is our
+                fundamental aim, and we believe this can lead to a healthier society.
+            </p>
+        </div>
     </div>
-  </div>
+    <script src="/js/loadComponents.js"></script>
 </body>
 
 </html>
