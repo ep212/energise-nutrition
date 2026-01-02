@@ -2,60 +2,56 @@
 <html>
 <head>
   <title>Carbohydrates</title>
-  <link rel="stylesheet" href="css/carbohydrates-css.css">
+  <style>
+    .flex-container-blogs {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+    .header {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #061E29;
+    }
+    .header ul {
+      list-style-type: none;
+    }
+    .header a {
+      text-decoration: none;
+      padding: 15px;
+    }
+    .header li {
+      float: left;
+    }
+    .carbs-content {
+      margin: 30px;
+    }
+  </style>
 </head>
 <body>
-  <div class="carbs-container">
-    <div class="header">
-      <h1>Carbohydrates</h1>
-    </div>
-    <div class="introductory-content">
-      <p style="font-family: 'Gill Sans', 'Gill Sans MT', sans-serif; color: white;" class="introduction">
-        Carbohydrates are our bodies primary source of energy. According to UK government guidelines, 50-55% of the energy
-        we consume should come from carbohydrates. This means that 50-55% of our calorie intake should be from carbohydrates.
-        Of this, only 5% should come from added sugars. Seen as such a large bulk of our diet should consist of carbohydrates,
-        it's important to understand what they do, the differences between different sources, and how to make them work for you
-        and fit your goals. Please be aware that the percentages mentioned are 'guidelines', everybody is different and people
-        have different needs, they're not a one size fits all figure.
-      </p>
-      <img src="img/carbohydrates/energy-transparent-back.png" class="test-image" alt="...">
-    </div>
-    <div class="types-of-carbohydrates">
-      <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', sans-serif; color: white;">Types of Carbohydrates</h2>
-      <p style="font-family: 'Gill Sans', 'Gill Sans MT', sans-serif; color: white;">
-        There are two main types of carbohydrates, simple and complex. To understand the differences we first need to know that
-        carbohydrates are made up of sugar units. Simple, or sugary, carbohydrates are made up of between 1 and 10 sugar units, where
-        as complex, or starchy, carbohydrates can be made up of many hundreds of sugar units joined together. Monosacharrides and 
-        disaccharides are made up of one and two sugar units respectively, so they're your sugary carbohydrates. Polysaccharides are made 
-        up of many hundreds of sugar units and can be subdivided into starch and non-starch (fibre). Most of the carbohydrates we
-        consume will be broken down into glucose during digestion, glucose is an example of a monosaccharide. Starchy carbohydrates are your
-        breads, cereals, rice, pasta and potatoes, sugary carbohydrates are sweets, chocolate, bisucites, cake, fruit and some dairy products.
-      </p>
-    </div>
-    <div class="how-to-choose">
-      <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', sans-serif; color: white;">How to Choose</h2>
-      <p style="font-family: 'Gill Sans', 'Gill Sans MT', sans-serif; color: white;">
-        The amount of information can be overwhelming and confusing, so here are a few guidelines to follow when trying to make healthy
-        choices. When it comes to selecting starchy carbohydrates you want to consider managing your blood sugar levels and nutrient intake.
-        For example, carbs in a slice of white bread are more easily absorbed than those in a sweet potato, which will lead to a spike
-        in blood sugar levels which can fuel cravings. Also, sweet potatoes are a good source of fibre, which slows digestion, and nutrients.
-        When it comes to sugary carbohydrates, you should aim to get these from unjuiced fruit and veg, and unsweetened dairy products.
-        You should aim to limit processed, manufactured and sweetened foods.
-      </p>
-    </div>
-    <div class="what-carbs-do-flipcard">
-      <div class="what-inner-flipcard">
-        <div class="what-carbs-do-front">
-          <h2 style="font-family: Arial, sans-serif; color: #E7DEAF;">What Carbohydrates Do?</h2>
-        </div>
-        <div class="what-carbs-do-back">
-          <p>
-            Carbohydrates are your body's primary energy source, fuelling your brain, muscles and organs.
-            They also support gut health, with fibre promoting regularity, and many whole foods are great
-            sources of vitamins and minerals.
-          </p>
+    <div class="flex-container-carbohydrates">
+      <header class="header" style="background-color: #061E29;">
+        <h1 class="page-title" style="color: #F3F4F4; font-family: Arial, sans-serif;">Energise Nutrition - Blogs</h1>
+        <nav class="navbar">
+          <ul>
+            <li><a href="index.html" style="color: #F3F4F4; font-family: Arial, sans-serif;">Home</a></li>
+            <li><a href="blogs.html" style="color: #F3F4F4; font-family: Arial, sans-serif;">Blogs</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="carbs-content">
+        <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', sans-serif; color: black;">Carbohydrates</h2>
+        <p style="font-family: 'Gill Sans', 'Gill Sans MT', sans-serif; color: black;" class="introduction">
+          Carbohydrates are our bodies primary source of energy. According to UK government guidelines, 50-55% of the energy
+          we consume should come from carbohydrates. This means that 50-55% of our calorie intake should be from carbohydrates.
+          Of this, only 5% should come from added sugars. Seen as such a large bulk of our diet should consist of carbohydrates,
+          it's important to understand what they do, the differences between different sources, and how to make them work for you
+          and fit your goals. Please be aware that the percentages mentioned are 'guidelines', everybody is different and people
+          have different needs, they're not a one size fits all figure.
+        </p>
       </div>
     </div>
-  </div>
 </body>
 </html>

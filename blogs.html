@@ -25,19 +25,39 @@
     .header li {
       float: left;
     }
+    .thumbnail {
+      width: 200px;        /* size of the thumbnail */
+      height: 120px;
+      overflow: hidden;    /* hides anything outside the box */
+      border-radius: 8px;  /* optional: rounded corners */
+      border: 2px solid #ddd;
+    }
+
+    .thumbnail img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;   /* keeps the image nicely cropped */
+    }
+
   </style>
 </head>
 <body>
     <div class="flex-container-blogs">
-    <header class="header" style="background-color: #061E29;">
-      <h1 class="page-title">Energise Nutrition - Blogs</h1>
-      <nav class="navbar">
-        <ul>
-          <li><a href="index.html" style="color: #F3F4F4; font-family: Arial, sans-serif;">Home</a></li>
-          <li><a href="blogs.html" style="color: #F3F4F4; font-family: Arial, sans-serif;">Blogs</a></li>
-        </ul>
-      </nav>
-    </header>
+      <header class="header" style="background-color: #061E29;">
+        <h1 class="page-title" style="color: #F3F4F4; font-family: Arial, sans-serif;">Energise Nutrition - Blogs</h1>
+        <nav class="navbar">
+          <ul>
+            <li><a href="index.html" style="color: #F3F4F4; font-family: Arial, sans-serif;">Home</a></li>
+            <li><a href="blogs.html" style="color: #F3F4F4; font-family: Arial, sans-serif;">Blogs</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="thumbnail">
+        <a href="carbohydrates.html">
+          <img src="/img/carbohydrates/carbs_transparent_png.png" alt="Thumbnail example">
+        </a>
+      </div>
+
   </div>
 </body>
 </html>
