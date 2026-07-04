@@ -22,5 +22,13 @@
     "tags": ["meal prep", "time saving", "habits"],
     "date": "2026-07-03",
     "file": "meal-prep-starter-system.md"
+  },
+  {
+    "id": "digestive-process",
+    "title": "Digestive Process",
+    "summary": "Understanding how your body processes food for better nutrition.",
+    "tags": ["science", "digestion"],
+    "date": "2026-07-04",
+    "file": "digestive-process.md"
   }
 ]
