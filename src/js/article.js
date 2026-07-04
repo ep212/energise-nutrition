@@ -7,6 +7,10 @@ function escapeHtml(text) {
     .replace(/'/g, "&#039;");
 }
 
+function renderInlineMarkdown(text) {
+  return escapeHtml(text).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+}
+
 function markdownToHtml(markdown) {
   const lines = markdown.split(/\r?\n/);
   const output = [];
@@ -33,7 +37,7 @@ function markdownToHtml(markdown) {
     if (headingMatch) {
       closeLists();
       const level = headingMatch[1].length;
-      output.push(`<h${level}>${escapeHtml(headingMatch[2])}</h${level}>`);
+      output.push(`<h${level}>${renderInlineMarkdown(headingMatch[2])}</h${level}>`);
       return;
     }
 
@@ -44,7 +48,7 @@ function markdownToHtml(markdown) {
         inList = true;
       }
 
-      output.push(`<li>${escapeHtml(unorderedListMatch[1])}</li>`);
+      output.push(`<li>${renderInlineMarkdown(unorderedListMatch[1])}</li>`);
       return;
     }
 
@@ -55,7 +59,7 @@ function markdownToHtml(markdown) {
         inOrderedList = true;
       }
 
-      output.push(`<li>${escapeHtml(orderedListMatch[1])}</li>`);
+      output.push(`<li>${renderInlineMarkdown(orderedListMatch[1])}</li>`);
       return;
     }
 
@@ -65,7 +69,7 @@ function markdownToHtml(markdown) {
     }
 
     closeLists();
-    output.push(`<p>${escapeHtml(line)}</p>`);
+    output.push(`<p>${renderInlineMarkdown(line)}</p>`);
   });
 
   closeLists();
