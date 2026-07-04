@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Read nutrition and health articles from Energise Nutrition."
+    />
+    <title>Article | Energise Nutrition</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&family=Manrope:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../src/css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" id="top">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html" aria-label="Energise Nutrition home">
+          <span class="brand-mark" aria-hidden="true">EN</span>
+          <span>Energise Nutrition</span>
+        </a>
+
+        <button
+          id="menu-toggle"
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+        >
+          Menu
+        </button>
+
+        <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+          <ul>
+            <li><a href="articles.html" aria-current="page">Articles</a></li>
+            <li><a href="index.html#recipes">Recipes</a></li>
+            <li><a href="index.html#plans">Meal Plans</a></li>
+            <li><a href="index.html#community">Community</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" class="section">
+      <div class="container article-page">
+        <a class="back-link" href="articles.html">&larr; Back to all articles</a>
+        <p id="article-status" class="search-count" aria-live="polite"></p>
+        <article id="article-content" class="article-prose"></article>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>&copy; <span id="year"></span> Energise Nutrition</p>
+        <a href="#top">Back to top</a>
+      </div>
+    </footer>
+
+    <script src="../src/js/main.js"></script>
+    <script src="../src/js/article.js"></script>
+  </body>
+</html>

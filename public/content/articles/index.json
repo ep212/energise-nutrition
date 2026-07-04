@@ -1,0 +1,26 @@
+[
+  {
+    "id": "balanced-plate-basics",
+    "title": "Balanced Plate Basics",
+    "summary": "A practical framework for building meals with protein, fiber, and healthy fats.",
+    "tags": ["foundations", "meal planning", "healthy eating"],
+    "date": "2026-07-01",
+    "file": "balanced-plate-basics.md"
+  },
+  {
+    "id": "healthy-shopping-on-budget",
+    "title": "Healthy Shopping On A Budget",
+    "summary": "Simple shopping strategies to lower cost while keeping meals nutritious.",
+    "tags": ["shopping", "budget", "meal prep"],
+    "date": "2026-07-02",
+    "file": "healthy-shopping-on-budget.md"
+  },
+  {
+    "id": "meal-prep-starter-system",
+    "title": "Meal Prep Starter System",
+    "summary": "A beginner-friendly weekly routine for prep, storage, and flexible meals.",
+    "tags": ["meal prep", "time saving", "habits"],
+    "date": "2026-07-03",
+    "file": "meal-prep-starter-system.md"
+  }
+]
