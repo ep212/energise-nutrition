@@ -1,24 +1,49 @@
-# energise-nutrition
-My nutrition website
+# Energise Nutrition
 
-## HTML
-The <head> section in HTML holds metadata and configuration information about the page. It doesn't display visible content.
-The head section typically includes:
-- title: title of the page shown in the browser tab
-- meta: metadata dats e.g. charset, viewport, description
-- link: links to external files like stylesheets
-- style: internal css styles
-- script: JavaScript code or links to external scripts
+Starter framework for a nutrition and health website built with plain HTML, CSS, and JavaScript.
 
-The <body> tag is the container that holds all the visible content on the web page. Things typically found in the body include:
-- h1, h2, etc: headings
-- p: paragraphs
-- div: containers for grouping content
-- button: buttons
-- img: images
-- a: links
-- ul, ol: lists
+## Project Structure
 
+```text
+.
+├── index.html
+├── assets/
+│   ├── css/
+│   │   └── styles.css
+│   └── js/
+│       └── main.js
+└── README.md
+```
 
-## CSS
+## What's Included
+
+- Responsive page layout with semantic sections
+- Accessible header navigation with mobile menu toggle
+- Reusable CSS design tokens (colors, spacing, shadows, radius)
+- Scroll reveal animation using `IntersectionObserver`
+- Small JavaScript utility example: daily water intake estimator
+
+## Run Locally
+
+Because this is a static site, you can run it with any local server.
+
+Option 1 (Python):
+
+```bash
+python3 -m http.server 8000
+```
+
+Then open `http://localhost:8000`.
+
+Option 2:
+
+- Open `index.html` directly in your browser
+- Or use the VS Code Live Server extension
+
+## Next Steps
+
+- Add pages: `about.html`, `blog.html`, `recipes.html`
+- Connect forms to a backend API
+- Add a content model for articles, recipes, and meal plans
+
 
